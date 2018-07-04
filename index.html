@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+<div class="container">
+
+    <br>
+
+    <div class="jumbotron">
+      <h1 class="text-center">Train Tracker</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card card-default">
+          <div class="card-heading">
+            <h3 class="card-title">Add Train</h3>
+          </div>
+          <div class="card-body">
+            <form role="form">
+              <div class="form-group row">
+                <label for="name-input">Train Name:</label>
+                <input class="form-control" id="name-input" type="text" placeholder="e.g Example Express">
+              </div>
+              <div class="form-group row">
+                <label for="email-input">Destination:</label>
+                <input class="form-control" id="place-input" type="text" placeholder="Please Enter a Valid Destination">
+              </div>
+              <div class="form-group row">
+                <label for="age-input">First Train Time:</label>
+                <input class="form-control" id="time-input" type="time">
+              </div>
+              <div class="form-group row">
+                <label for="comment-input">Frequency:</label>
+                 <input class="form-control" id="frequency-input" type="number" placeholder="Frequency in Minutes">
+              </div>
+              <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-16">
+        <div id="timeBox">
+            <p id="time">Current Time:</p>
+            <div id="showTime"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-12-lg">
+        <table class="table" id="myTable">
+  <thead>
+    <tr>
+      <th scope="col">Train Name</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Frequency (min)</th>
+      <th scope="col">Next Arrival</th>
+      <th scope="col">Minutes Away</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Example Express</th>
+      <td>Toronto</td>
+      <td>20</td>
+      <td>02:00 PM</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+        </div>
+    </body>
+     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</html>

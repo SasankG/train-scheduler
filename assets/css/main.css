@@ -1,0 +1,19 @@
+
+#timeBox {
+    float: right;
+    position: relative;
+    
+}
+
+#time {
+    position: relative;
+    bottom: 460px;
+    right: 300px;
+    font-size: 20pt;
+}
+#showTime{
+    position: relative;
+    bottom: 400px;
+    right: 300px;
+    font-size: 30pt;
+}
